@@ -1,0 +1,242 @@
+QWidget {
+    background-color: #28292a;
+}
+
+#logo {
+    background-color:#28292a;
+}
+
+#name {
+    margin-bottom: 100px;
+    min-width:100px;
+    min-height:50px;
+    color: #dbc1ac;
+}
+
+QLineEdit {
+    margin-top:5px;
+    max-width:500px;
+    min-width:500px;
+    min-height:50px;
+    max-height:100px;
+    Font-size:20px;
+    border : 0px;
+    background-color : white;
+}
+
+#login_btn {
+    margin-top:10px;
+    max-width:500px;
+    min-width:500px;
+    min-height:50px;
+    max-height:100px;
+    border : 0px;
+    color: black;
+    Font-size:20px;
+
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+#login_btn:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #2BBCA1,
+        stop: 1 #8dfc05
+    );
+
+}
+
+#right_box {
+    border: 10px solid qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #2BBCA1,
+        stop: 1 #7FD26F
+    );
+    border-radius: 50px;
+}
+
+
+#nav {
+    border-bottom: 5px solid qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+#logout{
+    border : 0px;
+    border-radius : 20px;
+    max-width:150px;
+    min-width:150px;
+    min-height:50px;
+    max-height:50px;
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+QPushButton#logout:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #0ebee6,
+        stop: 1 #8dfc05
+    );
+}
+
+
+
+#explore{
+    border : 0px;
+    border-radius : 20px;
+    margin-left:50px;
+    max-width:300px;
+    min-width:300px;
+    min-height:75px;
+    max-height:75px;
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+QPushButton#explore:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #0ebee6,
+        stop: 1 #8dfc05
+    );
+}
+
+#menu{
+    border: 5px solid qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+#back{
+    max-width:300px;
+    min-width:300px;
+    min-height:75px;
+    max-height:75px;
+    background-color:qlineargradient(
+            x1: 0, y1: 0,
+            x2: 1, y2: 0,
+            stop: 0 #7FD26F,
+            stop: 1 #2BBCA1
+    );
+    color : black;
+    border: 0px;
+    border-radius: 20px;
+}
+
+QPushButton#back:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #0ebee6,
+        stop: 1 #8dfc05
+    );
+}
+
+#menu_name {
+    color : qlineargradient(
+            x1: 0, y1: 0,
+            x2: 1, y2: 0,
+            stop: 0 #7FD26F,
+            stop: 1 #2BBCA1
+    );
+    Font-size : 30px;
+}
+#menu_price {
+    color : white;
+    Font-size : 20px;
+}
+
+#menu_cart_btn {
+    border : 0px;
+    border-radius : 20px;
+    max-width:200px;
+    min-width:200px;
+    min-height:50px;
+    max-height:50px;
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+QPushButton#menu_cart_btn:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #0ebee6,
+        stop: 1 #8dfc05
+    );
+}
+
+#tittle{
+
+    border-bottom: 5px solid qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+
+    color : qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+#prod_name{
+    color : qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+#prod_price{
+    color : white;
+}
+#Total{
+    color : qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
+
+#greet{
+    color : qlineargradient(
+        x1: 0, y1: 0,
+        x2: 1, y2: 0,
+        stop: 0 #7FD26F,
+        stop: 1 #2BBCA1
+    );
+}
