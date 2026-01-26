@@ -14,17 +14,15 @@ The project follows secure coding practices, and sensitive features such as emai
   - Beverages
   - Desserts
   - Snacks
-- Add and remove items from cart
+- Add items  cart
 - Automatic bill calculation
-- Local bill generation (bill.txt)
+- Automation Email bill seding system
 - Modular project structure
 
 ---
 
 ## 🔐 Security Notice
-Email automation using SMTP is disabled in this public repository to avoid exposing sensitive credentials such as email IDs and app passwords.
-
-You can enable email functionality locally using environment variables (.env).
+Email id and app password is not valid to use, for security reason you have to edit before run the code.
 
 ---
 
@@ -50,10 +48,12 @@ GUI-Cafe-Management/
 1. Clone the repository:
    git clone https://github.com/your-username/your-repo-name.git
 
-2. Install dependencies:
+2. Edit email id and app password in bill.py file inside UI before run entire code
+
+3. Install dependencies:
    pip install PyQt5
 
-3. Run the application:
+4. Run the application:
    python main.py
 
 ---
