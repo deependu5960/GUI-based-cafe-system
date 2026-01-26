@@ -38,7 +38,6 @@ Email id and app password is not valid to use, for security reason you have to e
 GUI-Cafe-Management/
 ├── Models/
 ├── UI/
-├── bill.txt
 ├── main.py
 └── README.md
 
