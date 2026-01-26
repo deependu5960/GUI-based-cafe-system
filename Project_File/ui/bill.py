@@ -57,52 +57,56 @@ class Last_page(QWidget):
 
     def mail(self):
 
-        with open(r"bill.txt","w") as f:
-            for i_name,i_data in cart_detail.items():
-                f.write(f"{i_name} : {i_data['price']}\n")
-            f.write(f"Your Total Bill : {total_price()}")
+        a = """Hello,
 
-        # try:
+        Thank you for visiting café House! ☕
+        We’re happy to share your bill for your recent order. Please find the attached invoice for your reference.
 
-        #     # Email details
-        #     sender_email = "Enter Your email id"
-        #     receiver_email = self.mail_bar.text()
-        #     app_password = "Enter your App Password of your Google"
+        Your payment has been received successfully.
+        We truly appreciate your visit and hope you enjoyed your time with us.
 
-        #     msg = EmailMessage()
-        #     msg["Subject"] = "Your Bill from Café House "
-        #     msg["From"] = sender_email
-        #     msg["To"] = receiver_email
-        #     msg.set_content("""Hello,
+        We’d love to welcome you back again soon for another great cup and a warm experience.
+            
+        Here is your bill :\n"""
 
-        #     Thank you for visiting café House! ☕
-        #     We’re happy to share your bill for your recent order. Please find the attached invoice for your reference.
+        for i_name,i_data in cart_detail.items():
+                a+=f"{i_name} : {i_data["price"]} \n"
+    
+        a+=f"""
+        TOTAL AMOUNT : {total_price()}
 
-        #     Your payment has been received successfully.
-        #     We truly appreciate your visit and hope you enjoyed your time with us.
+        Thank you for choosing us.
 
-        #     We’d love to welcome you back again soon for another great cup and a warm experience.
+        Warm regards,
+        Café House Team
+        """
 
-        #     Thank you for choosing us.
 
-        #     Warm regards,
-        #     Café House Team
-        #     """)
+        try:
 
-        #     with open(r"bill.txt","r") as f:
-        #         bill_data = f.read()
+            # Email details
+            sender_email = "Enter your sending email address"
+            receiver_email = self.mail_bar.text()
+            app_password = "Enter your Google App password"
 
-        #     msg.add_attachment(bill_data,"bill.txt")
-        #     # Send email
-        #     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-        #         server.login(sender_email, app_password)
-        #         server.send_message(msg)
+            msg = EmailMessage()
+            msg["Subject"] = "Your Bill from Café House "
+            msg["From"] = sender_email
+            msg["To"] = receiver_email
+            msg.set_content(a)
 
-        #     self.indicator.setText("Your Bill has been sent successfully")
-        #     self.indicator.setStyleSheet("color:white;")
-        #     self.mail_bar.setStyleSheet("border : 0px;")
+            # Send email
+            with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+                server.login(sender_email, app_password)
+                server.send_message(msg)
 
-        # except:
-        #     self.indicator.setText("Please Enter Valid Email-id")
-        #     self.indicator.setStyleSheet("color:red;")
-        #     self.mail_bar.setStyleSheet("border : 5px solid red;")
+            self.indicator.setText("Your Bill has been sent successfully")
+            self.indicator.setStyleSheet("color:white;")
+            self.mail_bar.setStyleSheet("border : 0px;")
+
+        except:
+            self.indicator.setText("Please Enter Valid Email-id")
+            self.indicator.setStyleSheet("color:red;")
+            self.mail_bar.setStyleSheet("border : 5px solid red;")
+
+        
