@@ -37,6 +37,8 @@ Email id and app password is not valid to use, for security reason you have to e
 ## 📂 Project Structure
 GUI-Cafe-Management/
 ├── Models/
+├── Images/
+├── Styles/
 ├── UI/
 ├── main.py
 └── README.md
